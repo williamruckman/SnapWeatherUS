@@ -1,0 +1,50 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools" tools:context=".ISCWarnFragment">
+
+    <item android:id="@+id/action_animate" android:title="Animation"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="false"/>
+
+    <item android:id="@+id/action_Refresh" android:title="Refresh"
+        android:orderInCategory="99" app:showAsAction="always"
+        android:icon="@drawable/ic_refresh"
+        android:visible="false"/>
+
+    <item android:id="@+id/action_KeepScreenOn" android:title="Keep Screen On"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L0" android:title="Topology"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L2" android:title="County"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L3" android:title="Rivers"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L4" android:title="Highways"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L5" android:title="City"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L6" android:title="Warnings"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_L7" android:title="Legend"
+        android:orderInCategory="101" app:showAsAction="never"
+        android:visible="true"/>
+
+    <item android:id="@+id/action_settings" android:title="Settings"
+        android:orderInCategory="100" app:showAsAction="never"
+        android:visible="true"/>
+
+</menu>

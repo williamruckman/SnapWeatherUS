@@ -1,0 +1,111 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="SnapWeatherUS Main Settings"
+        app:icon="@drawable/ic_service">
+    <SwitchPreferenceCompat
+        app:key="settings_Service_Switch"
+        app:title="Enable Weather Alert Notifications"
+        app:summary="Runs a foreground service and notifies you of important weather alerts even if you are not in the application"
+        app:icon="@drawable/ic_blankicon"
+        app:defaultValue="true"
+        />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Notification Severity Levels"
+        app:icon="@drawable/ic_notification">
+        <SwitchPreferenceCompat
+            app:key="settings_Extreme_Switch"
+            app:title="Extreme"
+            app:summary="Immediate danger to self and property. Examples: [Volcano Warning] [Civil Emergency] [Radiological Hazard]"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Severe_Switch"
+            app:title="Severe"
+            app:summary="Significant threat. Examples: [Tornado Warning] [Severe Thunderstorm Warning] [Severe Thunderstorm Watch] [Excessive Heat Warning]"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Moderate_Switch"
+            app:title="Moderate"
+            app:summary="Medium threat. Examples: [Dense Fog Advisory] [Gale Warning] [Heat Advisory]"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Minor_Switch"
+            app:title="Minor"
+            app:summary="Minimal to small threat. Examples: [Flood Advisory] [Small Craft Advisory]"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Unknown_Switch"
+            app:title="Unknown"
+            app:summary="Threat level is undefined. Examples: [Air Quality Alert] [Hydrologic Outlook]"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="Radar Default Display Layers"
+        app:icon="@drawable/ic_radar"
+        app:isPreferenceVisible="false">
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L0"
+            app:title="Topology"
+            app:summary="Shows the ground geology and spacial relations"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="false"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L2"
+            app:title="County"
+            app:summary="Shows the local county borders"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L3"
+            app:title="Rivers"
+            app:summary="Shows the local rivers and names"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="false"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L4"
+            app:title="Highways"
+            app:summary="Shows the local highways and names"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L5"
+            app:title="City"
+            app:summary="Shows the local cities and names"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L6"
+            app:title="Warnings"
+            app:summary="Draw watches and warnings over affected areas"
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+        <SwitchPreferenceCompat
+            app:key="settings_Radar_L7"
+            app:title="Legend"
+            app:summary="Show legend for radar weather watches, warnings, and dBZ. The equivalent reflectivity factor of a radar signal reflected off a droplet of rain."
+            app:icon="@drawable/ic_blankicon"
+            app:defaultValue="true"
+            />
+    </PreferenceCategory>
+
+</PreferenceScreen>

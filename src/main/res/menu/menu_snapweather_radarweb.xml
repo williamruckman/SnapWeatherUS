@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.ruckman.snapweatherus.MainActivitySnapWeather">
+    <item android:id="@+id/goHome"
+        android:title="@string/goHome"
+        android:orderInCategory="90"
+        app:showAsAction="never" />
+</menu>

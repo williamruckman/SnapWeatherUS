@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@android:color/black"
+
+    >
+
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/about_content_fragment"
+    tools:context=".MainActivitySnapWeather"
+    android:background="@android:color/black"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay"
+
+    >
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/weather_background_border"
+        >
+
+    <TextView
+        android:id="@+id/aboutText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textColor="#FFFFFF"
+        android:textSize="30dp"
+        android:text="About"
+        />
+        <TextView
+            android:id="@+id/about_App"
+            android:layout_below="@+id/aboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="SnapWeatherUS"
+            android:textSize="20dp"
+            />
+        <TextView
+            android:id="@+id/aboutVersion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="@string/version"
+            android:layout_below="@+id/about_App"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/weather_background_border"
+        >
+
+        <TextView
+            android:id="@+id/authorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:text="Author"
+            />
+
+        <ImageView
+            android:id="@+id/authorSelfImage"
+            android:layout_below="@+id/authorText"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:src="@raw/aboutself"
+            />
+        <TextView
+            android:id="@+id/authorName"
+            android:layout_below="@+id/authorSelfImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorAccent"
+            android:textSize="20dp"
+            android:text="William Ruckman"
+            android:layout_centerHorizontal="true"
+            />
+        <RelativeLayout
+            android:id="@+id/relLayoutEmail"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/authorName"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/aboutEmailLabel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Mail: "
+                android:textColor="@color/colorAccent"
+                />
+            <TextView
+                android:id="@+id/aboutEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="william@ruckman.net"
+                android:layout_toRightOf="@+id/aboutEmailLabel"
+                android:textColor="#FFFFFF"/>
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/relLayoutEmail"
+        android:gravity="center"
+        >
+        <TextView
+            android:id="@+id/aboutWebsiteLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Website: "
+            android:textColor="@color/colorAccent"/>
+        <TextView
+            android:id="@+id/aboutWebsite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="https://ruckman.net"
+            android:layout_toRightOf="@+id/aboutWebsiteLabel"
+            android:textColor="#FFFFFF"/>
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/weather_background_border"
+        android:visibility="gone"
+        >
+        <TextView
+            android:id="@+id/specialThanksText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:textColor="#FFFFFF"
+            android:textSize="30dp"
+            android:text="Special Thanks"
+            />
+    <RelativeLayout
+        android:id="@+id/relLayoutSTLogos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/specialThanksText"
+        android:gravity="center"
+        >
+        <RelativeLayout
+            android:id="@+id/rel2LayoutSTLogos"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <ImageView
+                android:id="@+id/nwsImage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:src="@raw/nwslogo"
+                />
+            <ImageView
+                android:id="@+id/noaaImage"
+                android:layout_width="125dp"
+                android:layout_height="125dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/nwsImage"
+                android:src="@raw/noaalogo"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/disclaimerLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="Disclaimer: "
+            android:textColor="@color/colorAccent"
+            android:layout_below="@+id/rel2LayoutSTLogos"
+            />
+        <TextView
+            android:id="@+id/disclaimerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:text="the use of the emblem or logo does not imply an endorsement by NOAA/NWS of the provider or their products/services"
+            android:layout_toRightOf="@+id/disclaimerLabel"
+            android:layout_below="@+id/rel2LayoutSTLogos"
+            android:textColor="#FFFFFF"/>
+
+    </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>
+</ScrollView>

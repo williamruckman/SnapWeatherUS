@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">SnapWeatherUS</string>
+    <string name="tab_text_1">LIVE</string>
+    <string name="tab_text_2">SETTINGS</string>
+    <string name="main_alert_text">ACTIVE WEATHER ALERT</string>
+    <string name="action_refresh">Refresh</string>
+    <string name="goHome">Home</string>
+    <string name="clearCache">Clear Cache</string>
+    <string name="version">2.12</string>
+</resources>

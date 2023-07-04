@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/alert_background_border"
+    android:paddingLeft="5dp"
+    android:paddingRight="5dp"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_marginBottom="15dp"
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/event"
+        android:textSize="20sp"
+        android:textColor="#FFFF0000"
+        android:text="event text"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/start"
+        android:layout_below="@+id/event"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF00"
+        android:text="START: "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/effective"
+        android:layout_below="@+id/event"
+        android:layout_toRightOf="@+id/start"
+        android:textSize="12sp"
+        android:textColor="#019688"
+        android:text="effective time"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/end"
+        android:layout_below="@+id/effective"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF00"
+        android:text="END: "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/expires"
+        android:layout_below="@+id/effective"
+        android:layout_toRightOf="@+id/end"
+        android:textSize="12sp"
+        android:textColor="#019688"
+        android:text="expires time"
+        />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/summary"
+        android:layout_below="@+id/expires"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF00"
+        android:text="SUMMARY: "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/headline"
+        android:layout_below="@+id/summary"
+        android:textSize="12sp"
+        android:textColor="#019688"
+        android:text="headline text"
+        />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/detail"
+        android:layout_below="@+id/headline"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF00"
+        android:text="DETAIL: "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/description"
+        android:layout_below="@+id/detail"
+        android:textSize="12sp"
+        android:textColor="#019688"
+        android:text="description text"
+        />
+    <TextView
+        android:paddingTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instructhead"
+        android:layout_below="@+id/description"
+        android:textSize="12sp"
+        android:textColor="#FFFFFF00"
+        android:text="INSTRUCTION: "
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/instruction"
+        android:layout_below="@+id/instructhead"
+        android:textSize="12sp"
+        android:textColor="#019688"
+        android:text="instruction text"
+        />
+
+</RelativeLayout>
